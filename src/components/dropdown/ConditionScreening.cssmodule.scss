@@ -1,0 +1,22 @@
+@import "../../shares/common.scss";
+
+.root {
+  display: flex;
+  padding: 6px;
+
+  .left {
+    width: 400px;
+  }
+
+  .right {
+    flex: 1;
+    padding: 0 6px 0 24px;
+  }
+  :global {
+    .ant-table-body {
+      border: $light-border;
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+}

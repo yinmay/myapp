@@ -1,0 +1,15 @@
+@import "../../../shares/common.scss";
+
+.root {
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  :global {
+    td,
+    th {
+      max-width: 100%;
+      @include oneline;
+    }
+  }
+}

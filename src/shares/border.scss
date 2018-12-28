@@ -1,0 +1,19 @@
+@import './color.scss';
+
+// 边框
+$border: 1px solid rgb(233, 233, 233);
+
+// 蓝边框
+$blue-border: 1px solid $primary-blue;
+
+// 绿边框
+$green-border: 1px solid $default-green;
+
+// 浅色边框
+$light-border: 1px solid rgb(246, 246, 246);
+
+// 边框阴影
+$border-shadow: 0 0 2px #d9d9d9;
+
+// 选中shadow效果
+$select-shadow: 0 0 10px #d9d9d9;

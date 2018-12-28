@@ -1,0 +1,37 @@
+@import "../../shares/common.scss";
+
+.root {
+  padding: 6px;
+  .head {
+    > button {
+      margin-right: 6px;
+    }
+    .search {
+      float: right;
+      width: 260px;
+    }
+  }
+  .lists {
+    margin-top: 6px;
+  }
+  .item {
+    line-height: 25px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border: $border;
+    padding: 6px;
+    word-wrap: break-word;
+    word-break: break-all;
+    &:hover {
+      background-color: $select-blue;
+    }
+  }
+  .itemActive {
+    line-height: 25px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border: $border;
+    padding: 6px;
+    background-color: $select-blue;
+  }
+}

@@ -1,0 +1,25 @@
+.root {
+  padding: 9px 12px;
+
+  :global {
+    .ant-breadcrumb {
+      font-size: 14px;
+      color: #999999;
+      line-height: 22px;
+
+      span.active {
+        color: #333333;
+
+        > a {
+          color: #333333;
+        }
+
+        i {
+          margin-left: 6px;
+          font-weight: 900;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

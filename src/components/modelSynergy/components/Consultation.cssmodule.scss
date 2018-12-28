@@ -1,0 +1,44 @@
+@import "../../../shares/common.scss";
+
+.root {
+  flex: 1;
+  overflow: hidden;
+  padding: 6px;
+  background-color: $light-gray;
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+    overflow: auto;
+    .item {
+      display: inline-block;
+      &:hover {
+        box-shadow: 0 0 10px #d9d9d9;
+      }
+    }
+  }
+
+  :global {
+    .ant-card-body {
+      width: 424px;
+      padding: 20px 24px 0px;
+    }
+    .ant-card-actions {
+      margin: 0 9px;
+      background-color: #fff;
+      border-top-color: rgba(#000000, 0.05);
+      li {
+        span {
+          cursor: default;
+        }
+        a {
+          color: #999999;
+          &:hover {
+            color: #002766;
+          }
+        }
+      }
+    }
+  }
+}

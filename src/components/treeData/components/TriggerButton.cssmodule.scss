@@ -1,0 +1,5 @@
+@import "../../../shares/common.scss";
+.root {
+  @include button-small;
+  margin-left: 6px;
+}

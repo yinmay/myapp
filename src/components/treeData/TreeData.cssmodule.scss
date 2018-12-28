@@ -1,0 +1,37 @@
+.root {
+  .left {
+    .check {
+      margin-left: 6px;
+    }
+  }
+}
+:global {
+  .ant-tree.ant-tree-show-line li span.ant-tree-switcher {
+    display: none;
+  }
+  .ant-tree.ant-tree-show-line li:not(:last-child):before {
+    margin: 13px 0;
+  }
+  li span.ant-tree-node-content-wrapper > span {
+    position: relative;
+    z-index: 1;
+    left: -4px;
+  }
+  .ant-tree-node-content-wrapper {
+    &:hover {
+      i {
+        background: #ccd4d9;
+      }
+    }
+    &.ant-tree-node-selected {
+      i {
+        background: #ccd4d9;
+        transition: all 0.3s;
+      }
+    }
+    i {
+      background: #fff;
+      transition: all 0.3s;
+    }
+  }
+}

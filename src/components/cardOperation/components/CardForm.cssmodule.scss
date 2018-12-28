@@ -1,0 +1,27 @@
+@import "../../../shares/common.scss";
+
+.content {
+  display: flex;
+  span {
+    line-height: 25px;
+  }
+  textarea {
+    flex: 1;
+  }
+}
+.fromfooter {
+  border-top: $border;
+  padding: 12px 6px;
+  text-align: right;
+  button {
+    margin-left: 6px;
+  }
+}
+:global {
+  .ant-modal-header {
+    padding-left: 6px;
+  }
+  .ant-form-item-control {
+    padding: 6px 6px 0;
+  }
+}

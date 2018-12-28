@@ -1,0 +1,65 @@
+@import "../../../shares/common.scss";
+
+.root {
+  width: 400px;
+
+  .select {
+    display: flex;
+
+    > div {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+
+  .selected {
+    display: flex;
+    margin: 12px 0;
+
+    .text {
+      width: 95px;
+      display: flex;
+      align-items: center;
+
+      div {
+        @include oneline;
+      }
+    }
+
+    .input {
+      flex: 9;
+      padding: 0 6px;
+    }
+
+    .btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .form {
+    :global {
+      .ant-select {
+        width: 53px;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 12px;
+    text-align: right;
+  }
+  :global {
+    .ant-select {
+      width: 100%;
+    }
+
+    .ant-btn-primary {
+      margin-left: 6px;
+    }
+
+    .ant-select-selection-selected-value {
+      width: 100%;
+    }
+  }
+}

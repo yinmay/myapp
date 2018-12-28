@@ -1,0 +1,30 @@
+@import "../../../shares/common.scss";
+.root {
+  box-shadow: $border-shadow;
+  padding: 12px;
+  display: -webkit-box;
+  .newButton:global(.ant-btn) {
+    &:active {
+      border-right-color: #688db3;
+      z-index: 10;
+    }
+    &:hover {
+      border-right-color: #688db3;
+      z-index: 10;
+    }
+  }
+  .trigger {
+    float: left;
+  }
+  .select {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    color: red;
+  }
+  .right {
+    margin-left: 6px;
+    width: 84px;
+    height: 28px;
+  }
+}
